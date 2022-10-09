@@ -402,7 +402,7 @@ class RandomTeams extends Dex.ModdedDex {
 			let happiness = this.random(256);
 
 			// Random shininess
-			let shiny = this.randomChance(1, 1024);
+			let shiny = this.randomChance(1, 4096);
 
 			team.push({
 				name: template.baseSpecies,
