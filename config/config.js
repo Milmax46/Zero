@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * The server port - the port to run Pokemon Showdown under
@@ -8,18 +8,18 @@ exports.port = 8000;
 /**
  * The server Name - Being used to rename custom-plugins.
  */
-exports.serverName = 'Server';
+exports.serverName = "Frozen Showdown";
 
 /**
-* The server IP - Being used to show avatars in profile.
-*/
-exports.serverIp = 'serverip';
+ * The server IP - Being used to show avatars in profile.
+ */
+exports.serverIp = "serverip";
 
 /**
  * The server address - the address at which Pokemon Showdown should be hosting
  *   This should be kept set to 0.0.0.0 unless you know what you're doing.
  */
-exports.bindaddress = '0.0.0.0';
+exports.bindaddress = "0.0.0.0";
 
 /**
  * workers - the number of networking child processes to spawn
@@ -86,25 +86,25 @@ exports.ofe = false;
  *   The PotD will always be in the #2 slot (not #1 so it won't be a lead)
  *   in every Random Battle team.
  */
-exports.potd = '';
+exports.potd = "";
 
 /**************************
-* Used To Enable/Disable *
-* Poof custom-plugin    *
-************************/
+ * Used To Enable/Disable *
+ * Poof custom-plugin    *
+ ************************/
 exports.poof = true;
 
 /****************************
-* Used to set expTimer ******
-* X amount of timer passed **
-* after last message before *
-* user can earn exp  ********
-* default to 30 seconds *****
-*****************************/
+ * Used to set expTimer ******
+ * X amount of timer passed **
+ * after last message before *
+ * user can earn exp  ********
+ * default to 30 seconds *****
+ *****************************/
 exports.expTimer = 30000;
 
 // add system operators.
-exports.special = ['thedarksunset','immortalsx'];
+exports.special = ["milmax46"];
 
 /**
  * crash guard - write errors to log file instead of crashing
@@ -120,7 +120,7 @@ exports.crashguard = true;
  *   This is the URL of the user database and ladder mentioned earlier.
  *   Don't change this setting - there aren't any other login servers right now
  */
-exports.loginserver = 'http://play.pokemonshowdown.com/';
+exports.loginserver = "http://play.pokemonshowdown.com/";
 exports.loginserverkeyalgo = "RSA-SHA1";
 exports.loginserverpublickeyid = 4;
 exports.loginserverpublickey = `-----BEGIN PUBLIC KEY-----
@@ -289,7 +289,7 @@ exports.backdoor = true;
  * the `console` permission in order to use the dev console.
  * Setting this to an empty array ([]) will disable the dev console.
  */
-exports.consoleips = ['127.0.0.1'];
+exports.consoleips = ["127.0.0.1"];
 
 /**
  * Whether to watch the config file for changes. If this is enabled,
@@ -335,7 +335,7 @@ exports.inactiveuserthreshold = 1000 * 60 * 60;
  * in lockdown mode and the final battle finishes.  This is potentially useful
  * to prevent forgetting to restart after a lockdown where battles are finished.
  */
-exports.special = ['xdragonprince'];
+exports.special = ["xdragonprince"];
 exports.autolockdown = true;
 
 /**
@@ -350,7 +350,7 @@ exports.autolockdown = true;
  * @type {{[userid: string]: string}}
  */
 exports.customavatars = {
-	// 'userid': 'customavatar.png'
+  // 'userid': 'customavatar.png'
 };
 
 /**
@@ -360,9 +360,11 @@ exports.customavatars = {
  * tourdefaultplayercap - a set cap of how many players can be in a tournament
  * ratedtours - toggles tournaments being ladder rated (true) or not (false)
  */
-exports.tourroom = '';
+exports.tourroom = "";
 /** @type {string[]} */
-exports.tourannouncements = [/* roomids */];
+exports.tourannouncements = [
+  /* roomids */
+];
 exports.tourdefaultplayercap = 0;
 exports.ratedtours = false;
 
@@ -467,7 +469,7 @@ exports.grouplist = [
     id: "admin",
     name: "Administrator",
     root: true,
-    globalonly: true
+    globalonly: true,
   },
   {
     symbol: "#",
@@ -487,7 +489,7 @@ exports.grouplist = [
     gamemanagement: true,
     // Custom
     draft: true,
-    masspm: true
+    masspm: true,
   },
   {
     symbol: "&",
@@ -520,7 +522,7 @@ exports.grouplist = [
     faction: true,
     icon: true,
     customtitle: true,
-    profile: true
+    profile: true,
   },
   /**{
 		symbol: '$',
@@ -562,7 +564,7 @@ exports.grouplist = [
     modchat: true,
     roomonly: false,
     gamemanagement: true,
-    joinbattle: true
+    joinbattle: true,
   },
   {
     symbol: "\u2606",
@@ -574,7 +576,7 @@ exports.grouplist = [
     roomonly: true,
     editroom: true,
     joinbattle: true,
-    nooverride: true
+    nooverride: true,
   },
   {
     symbol: "*",
@@ -583,7 +585,7 @@ exports.grouplist = [
     inherit: "@",
     jurisdiction: "u",
     declare: true,
-    addhtml: true
+    addhtml: true,
   },
   {
     symbol: "@",
@@ -602,7 +604,7 @@ exports.grouplist = [
     game: true,
     // Custom
     news: true,
-    roomshop: true
+    roomshop: true,
   },
   {
     symbol: "%",
@@ -626,7 +628,7 @@ exports.grouplist = [
     joinbattle: true,
     minigame: true,
     // Custom
-    lottery: true
+    lottery: true,
   },
   {
     symbol: "+",
@@ -634,22 +636,22 @@ exports.grouplist = [
     name: "Voice",
     inherit: " ",
     alts: "s",
-    broadcast: true
+    broadcast: true,
   },
   {
     symbol: " ",
-    ip: "s"
+    ip: "s",
   },
   {
     name: "Locked",
     id: "locked",
     symbol: "\u203d",
-    punishgroup: "LOCK"
+    punishgroup: "LOCK",
   },
   {
     name: "Muted",
     id: "muted",
     symbol: "!",
-    punishgroup: "MUTE"
-  }
+    punishgroup: "MUTE",
+  },
 ];
